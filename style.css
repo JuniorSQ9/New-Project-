@@ -1,0 +1,506 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+html, body {
+     overflow-x: hidden;   /*isso em conjunto com o position relative tira o overflow do mobile */
+  }
+  
+header .line {
+    background-color: #117050;
+    height: 10px;
+}
+.container {
+    max-width: 1140px;
+    margin: auto;
+    
+}
+.header--right {
+    display: flex;
+    align-items: center;
+}
+.header--area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.header--left img {
+    width: 64px;
+    height: 64px;
+}
+.header--search input {
+    font-size: 16px;
+    padding: 10px 13px;
+    border: 1px solid #999999;
+    outline: 0;
+    width: 220px;
+    font: 400 16px 'Open Sans';    /* posso usar dessa forma pra setar todas as propriedades de uma so vez */
+    padding-right: 30px;
+
+}
+
+.header--search form {
+    display: flex;
+    align-items: center;
+    
+}
+.header--search button {
+    border: 0;
+    background: transparent;
+    margin-left: -30px;
+    cursor: pointer;
+}
+.header--search button img {
+    width: 16px;
+    height: 16px;
+    
+}
+.header--menu {
+    margin-left: 50px;
+    cursor: pointer;
+}
+.header--menu img {
+    width: 26px;
+    height: 26px;
+}
+.banner {
+    background-image: url('./bg.jpg');
+    background-position: 50% 50%;  /* a primeira propriedade alinha horizontalmente e a segunda verticalmente */
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.banner h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 95px;
+    line-height:110px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.banner--images {
+    margin-top: 60px;
+}
+.banner--images img {
+    width: 148px;
+    height: 148px;
+    border: 5px solid #117050;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+/* !!! AREA 1 !!! */
+
+.area1--img1 {
+    background-image: url('./f2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 360px;
+}
+.area1--img2 {
+    background-image: url('./f1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3 ;
+    
+}
+.area1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.area1--content {
+  margin: auto;
+  padding: 70px 90px 60px 70px;
+  text-align: start;
+  
+
+}
+.area1--content .top-bar {
+    display: inline-block;
+    width: 160px;
+    height: 22px;
+    background-color: #006341
+    
+}
+.area1--content h1 {
+    font-family: 'Oswald';
+    font-size: 36px;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.area1--content .quote {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 30px;
+} 
+.area1--content p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+    max-width: 450px;
+    margin-bottom: 50px;
+    
+}
+.area1--content .button {
+    display: inline-block;  /* sem o display: inline-block; ñ consigo adicionar margin nem definir width ou height */
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    border: 2px solid #454545; 
+    border-radius: 3px;
+    padding: 10px 40px;
+    color: #454545;
+    text-decoration: none;
+    
+    
+    
+}
+
+.area1--content .button:hover {
+    background-color: #454545;
+    color: #e8e9ee;
+    cursor: pointer;
+    transition: 0.3s;
+    
+    
+}
+
+/* !!! AREA 2 !!! */
+
+.area2--img1 {
+    background-image: url('./f4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 450px;
+}
+.area2--img2 {
+    background-image: url('./f3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3 ;
+    
+}
+.area2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.area2--content {
+  margin: auto;
+  padding: 70px 90px 60px 70px;
+  text-align: start;
+  
+
+}
+.area2--content .top-bar {
+    display: inline-block;
+    width: 160px;
+    height: 22px;
+    background-color: #006341
+    
+}
+.area2--content h1 {
+    font-family: 'Oswald';
+    font-size: 36px;
+    line-height: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.area2--content .quote {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 30px;
+} 
+.area2--content p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+    max-width: 450px;
+    margin-bottom: 40px;
+    
+}
+.area2--content .button {
+    display: inline-block;  /* sem o display: inline-block; ñ consigo adicionar margin nem definir width ou height */
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    border: 2px solid #454545; 
+    border-radius: 3px;
+    padding: 10px 40px;
+    color: #454545;
+    text-decoration: none;
+    
+    
+    
+}
+
+.area2--content .button:hover {
+    background-color: #454545;
+    color: #e8e9ee;
+    cursor: pointer;
+    transition: 0.3s;
+    
+    
+}
+
+/* !!! AREA 3 !!! */
+.area3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+}
+.button {
+    display: inline-block;  /* sem o display: inline-block; ñ consigo adicionar margin nem definir width ou height */
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    border: 2px solid #454545; 
+    border-radius: 3px;
+    padding: 10px 40px;
+    color: #454545;
+    text-decoration: none;
+    
+}
+.button:hover {
+    background-color: #454545;
+    color: #e8e9ee;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.area3--content h1 {
+    font-family: 'Oswald';
+    font-size: 36px;
+    line-height: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.area3--content p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+    max-width: 450px;
+    margin-bottom: 40px;
+    
+}
+.area3--content {
+    background-image: url('./bg2.jpg');
+    background-size: cover;
+    background-position: left;
+    padding: 250px 100px
+    
+}
+.area3--img1 {
+    background-image: url('./f5.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+/* !!!AREA 4!!! */
+.area4 .button {
+    display: inline-block;  /* sem o display: inline-block; ñ consigo adicionar margin nem definir width ou height */
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    border: 2px solid #454545; 
+    border-radius: 3px;
+    padding: 10px 40px;
+    color: #454545;
+    text-decoration: none;
+    margin-top: 50px;
+}
+.area4 .button:hover {
+    background-color: #454545;
+    color: #e8e9ee;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.area4 {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    
+
+}
+.area4--content {
+    padding: 200px 80px 100px 100px;
+    min-height: 450px;
+    background-color: #EBECF1;
+    
+    
+}
+.area4--content h1 {
+    font-family: 'Oswald';
+    font-size: 36px;
+    line-height: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.area1--content p {
+    
+    font-family: 'Open Sans', sans-serif;
+    line-height: 27px;
+    max-width: 450px;
+    
+    
+    
+}
+.area4--content .top-bar {
+    display: inline-block;
+    width: 160px;
+    height: 22px;
+    background-color: #006341
+}
+.area4--img1 {
+    background-image: url('./bg3.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    
+   
+}
+
+.area5 {
+    background-image: url('./bg4.jpg');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
+footer {
+    width: 100%;
+    background-color: #333333;
+    text-align: center;
+}
+.footer-text {
+    margin: auto;
+    color: #e8e9ee;
+    padding: 80px;
+    font-size: 15px;
+    cursor: pointer;
+}
+@media (min-width: 769px) and (max-width: 1140px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .area1 {
+        grid-template-columns: 2fr 1fr;
+    }
+    .area2 {
+        grid-template-columns: 1fr 2fr;
+    }
+    .area3 {
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    
+}
+@media  (min-width: 321px) and (max-width: 425px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .header--search input {
+        max-width: 80px;
+    }
+    .banner h1 {
+        font-size: 55px;
+        line-height: 55px;
+    }
+    .banner--images img {
+        width: 70px;
+        height: 70px;
+        border: 5px solid #117050;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .area1, .area2 {
+        grid-template-columns: 1fr;
+    }
+    .area1--content {
+        padding: 30px;
+    }
+    .area1--img1 {
+        min-height: 200px;
+    }
+    .area2--content, .area3--content, .area4--content {
+        padding: 30px;
+    }
+    .area4--content {
+        max-width: 300px;
+    }
+    .area5 {
+        background-size: cover;
+    }
+    h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+@media  (max-width: 320px){
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .header--search input {
+        max-width: 80px;
+    }
+    .banner h1 {
+        font-size: 55px;
+        line-height: 55px;
+    }
+    .banner--images img {
+        width: 70px;
+        height: 70px;
+        border: 5px solid #117050;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .area1, .area2 {
+        grid-template-columns: 1fr;
+    }
+    .area1--content {
+        padding: 30px;
+    }
+    .area1--img1 {
+        min-height: 200px;
+    }
+    .area2--content, .area3--content, .area4--content {
+        padding: 30px;
+    }
+    .area4--content {
+        max-width: 300px;
+    }
+    .area5 {
+        background-size: cover;
+    }
+    h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
